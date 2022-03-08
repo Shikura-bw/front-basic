@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar box">
+            <img src="assets/icons/ic-tomato.svg" alt="" width="35px">
+            <img id="btn__show" src="assets/icons/ic-note.svg" alt="" width="38px">
+        </div>
+        <div class="menubar">
+            <div class="menubar__top box">
+                <div class="menubar__group">
+                    <img id="btn__prev" class="btn__prev" src="assets/icons/ic-previous.svg" alt="" >
+                    <div class="menubar__datepicker menubar__datepicker--main">
+                        <input class="datepicker" type="text" id="datepicker__first" autocomplete="off">
+                        <img class="menubar__icon" src="assets/icons/ic-calendar.svg" alt="" >
+                        <span class="menubar__day"></span>
+                    </div>
+                    <img id="btn__next" class="btn__next" src="assets/icons/ic-next.svg" alt="">
+                </div>
+                <div class="menubar__btn-group">
+                    <button class="btn__secondary">注</button>
+                    <button class="btn__secondary">待</button>
+                    <button class="btn__secondary">出</button>
+                </div>
+            </div>
+            <div class="menubar__bottom box">
+                <button class="btn__primary btn--small btn__primary--active">領収書記載</button>
+                <button class="btn__primary btn--small">出勤選択</button>
+                <button class="btn__primary btn--small">状態選択</button>
+                <button class="btn__primary btn--small">取引先選択</button>
+                <button class="btn__primary btn--small">生地選択</button>
+                <button class="btn__primary btn--small">生地選択</button>
+                <button class="btn__primary btn--small">ST.No</button>
+            </div>
+        </div>
+    </div>
+    <div id="list" class="list box">
+        <div class="list__content" style="overflow-y: auto; padding: 0 70px;">
+            <div class="border list__box">
+                <table class="form__detail box">
+                    <tbody>
+                        <tr>
+                            <td style="width: 33.33%; padding: 12px 0">   
+                                <div class="form__custom">
+                                    <input id="1" class="form__checkbox" type="checkbox" checked>
+                                    <label class="form__toggle" for="1"></label>
+                                    <div class="title form__title--left">取引先名</div> 
+                                </div> 
+                            </td>
+                            <td>
+                                <div style="display: flex;">
+                                    <div class="form__text form__text--width box">選択</div>
+                                    <div class="form__text form__text--width box">おみせ+</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="display: flex; justify-content: flex-end; padding-right: 20px;">
+                                    <div class="form__text form__text--width box">修正</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border" style="border-left: none; border-bottom: none;">   
+                                <div class="form__item form__item--left">
+                                    <div class="title title--small">スワツチ名</div> 
+                                    <div style="position: relative;">
+                                        <select class="section__select section__select--width">
+                                            <option value="">1回次/08:00</option>
+                                            <option value="">1回次/08:00</option>
+                                        </select>
+                                        <span class="triangle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="border" style="width: 33.33%; height: 70px; border-bottom: none;">
+                                <div class="form__item">
+                                    <div style="font-weight: 600;">#000</div> 
+                                    <div>番号/カラー名</div> 
+                                </div>
+                            </td>
+                            <td class="border" style="width: 33.33%; height: 70px; border-right: none; border-bottom: none;">
+                                <div class="form__item">
+                                    <div style="font-weight: 600;">000￥</div> 
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="box__btn">
+            <button class="btn__primary--active list__btn">出庫要請</button>
+        </div>
+    </div>
+    <div id="modal__form" class="modal__form">
+        <div class="overlay"></div>
+        <div class="modal__box modal__box--padding">
+            <div class="form__box">
+                <div class="form__create box">
+                    <div class="form__title titie">販売取引先修正</div>
+                    <div class="form__content">
+                        <div class="form__group">
+                            <label class="form__label title">名前</label>
+                            <input class="form__input" type="text">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label title">名前</label>
+                            <input class="form__input" type="text">
+                        </div>
+                    </div>
+                    <div class="form__content">
+                        <div class="form__group">
+                            <label class="form__label title">担当者（相手の堂々者）</label>
+                            <input  class="form__input" type="text">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label title">担当者</label>
+                            <input class="form__input" type="text">
+                        </div>
+                    </div>
+                    <div class="form__content">
+                        <div class="form__group">
+                            <label class="form__label title">区分け分け</label>
+                            <input class="form__input" type="text">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label title">区分け分け</label>
+                            <input class="form__input" type="text">
+                        </div>
+                    </div>
+                    <div class="form__content">
+                        <div class="form__group">
+                            <label class="form__label title">最初繰越日</label>
+                            <input class="form__input" type="text">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label title">最初繰越日</label>
+                            <input class="form__input" type="text">
+                        </div>
+                    </div>
+                    <div class="form__content">
+                        <div class="form__group">
+                            <label class="form__label title">最初繰越日</label>
+                            <input class="form__input" type="text">
+                        </div>
+                    </div>
+                    <div class="form__btn-group">
+                        <button class="modal__btn--submit form__btn--create">修正完了</button>
+                        <button id="modal__btn" class="modal__btn--submit form__btn--create">キャンセル</button>
+                    </div>
+                </div>
+               <div class="border" style="border-radius: 4px; overflow: hidden; margin-top: 16px;">
+                    <table class="form__detail box">
+                        <tbody>
+                            <tr>
+                                <td style="width: 33.33%; padding: 12px 0">   
+                                    <div class="form__custom">
+                                        <input id="checked" class="form__checkbox" type="checkbox" checked>
+                                        <label class="form__toggle" for="checked"></label>
+                                        <div class="title form__title--left">取引先名</div> 
+                                    </div> 
+                                </td>
+                                <td colspan="2">
+                                    <div style="display: flex;">
+                                        <div class="form__text box">注</div>
+                                        <div class="form__text box">選択</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="border" style="border-left: none; border-bottom: none;">   
+                                    <div class="form__item form__item--left">
+                                        <div>スワツチ名</div> 
+                                        <div>工場名(連絡先)</div> 
+                                    </div>
+                                </td>
+                                <td class="border" style="width: 33.33%; height: 70px;">
+                                    <div class="form__item">
+                                        <div>#000</div> 
+                                        <div>000/ABC</div> 
+                                    </div>
+                                </td>
+                                <td class="border" style="width: 33.33%; height: 70px; border-right: none;">
+                                    <div class="form__item">
+                                        <div>0000</div> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border" style="width: 33.33%; height: 70px; border-bottom: none;">
+                                    <div class="form__item">
+                                        <div>#000</div> 
+                                        <div>000/ABC</div> 
+                                    </div>
+                                </td>
+                                <td class="border" style="width: 33.33%; height: 70px; border-bottom: none; border-right: none;">
+                                    <div class="form__item">
+                                        <div>0000</div> 
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+            </div>
+        </div>   
+    </div>
+    <div class="modal__toggle">
+        <div class="toggle__btn toggle__btn--active toggle__btn--margin">
+            <div class="toggle__icon toggle__icon--up toggle__icon--active">     
+            </div>
+            <img class="toggle__oval" src="assets/icons/ic-oval.png" alt="" >
+        </div>
+        <div class="toggle__btn">
+            <div class="toggle__icon toggle__icon--down"></div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

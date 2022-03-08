@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar box">
+            <img src="assets/icons/ic-tomato.svg" alt="" width="35px">
+            <img id="btn__show" src="assets/icons/ic-note.svg" alt="" width="38px">
+        </div>
+        <div class="menubar">
+            <div class="menubar__top box">
+                <div class="menubar__group">
+                    <img id="btn__prev" class="btn__prev" src="assets/icons/ic-previous.svg" alt="" >
+                    <div class="menubar__datepicker menubar__datepicker--main">
+                        <input class="datepicker" type="text" id="datepicker__first" autocomplete="off">
+                        <img class="menubar__icon" src="assets/icons/ic-calendar.svg" alt="" >
+                        <span class="menubar__day"></span>
+                    </div>
+                    <img id="btn__next" class="btn__next" src="assets/icons/ic-next.svg" alt="">
+                </div>
+                <div class="menubar__btn-group">
+                    <button class="btn__secondary">注</button>
+                    <button class="btn__secondary">待</button>
+                    <button class="btn__secondary">出</button>
+                </div>
+            </div>
+            <div class="menubar__bottom box">
+                <button class="btn__primary btn--small btn__primary--active">領収書記載</button>
+                <button class="btn__primary btn--small">出勤選択</button>
+                <button class="btn__primary btn--small">状態選択</button>
+                <button class="btn__primary btn--small">取引先選択</button>
+                <button class="btn__primary btn--small">生地選択</button>
+                <button class="btn__primary btn--small">生地選択</button>
+                <button class="btn__primary btn--small">ST.No</button>
+            </div>
+        </div>
+    </div>
+    <div id="list" class="list box">
+        <div class="list__content" >
+        </div>
+    </div>
+    <div class="modal__toggle">
+        <div class="toggle__btn toggle__btn--active toggle__btn--margin">
+            <div class="toggle__icon toggle__icon--up toggle__icon--active">     
+            </div>
+            <img class="toggle__oval" src="assets/icons/ic-oval.png" alt="" >
+        </div>
+        <div class="toggle__btn">
+            <div class="toggle__icon toggle__icon--down"></div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

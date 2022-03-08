@@ -3,341 +3,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KR02147</title>
+    <title>Page 2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="sidebar box">
-            <img src="assets/icons/ic-tomato.svg" alt="" width="35px">
-            <img id="btn__show" src="assets/icons/ic-note.svg" alt="" width="38px">
-        </div>
-        <div class="menubar">
-            <div class="menubar__top box">
-                <div class="menubar__group">
-                    <img id="btn__prev" class="btn__prev" src="assets/icons/ic-previous.svg" alt="" >
-                    <div class="menubar__datepicker menubar__datepicker--main">
-                        <input class="datepicker" type="text" id="datepicker__first" autocomplete="off">
-                        <img class="menubar__icon" src="assets/icons/ic-calendar.svg" alt="" >
-                        <span class="menubar__day"></span>
-                    </div>
-                    <img id="btn__next" class="btn__next" src="assets/icons/ic-next.svg" alt="">
-                </div>
-                <div class="menubar__btn-group">
-                    <button class="btn__secondary btn__secondary--active">注</button>
-                    <button class="btn__secondary">待</button>
-                    <button class="btn__secondary">出</button>
-                    <button class="btn__third btn__third--active">1</button>
-                    <button class="btn__third">2</button>
-                    <button class="btn__third">3</button>
-                    <button class="btn__third">4</button>
-                    <button class="btn__third">5</button>
-                    <button class="btn__third">6</button>
-                    <button class="btn__third">7</button>
-                    <div style="display: flex; align-items: flex-end" class="menu__line">
-                        ………………………………………………………………
-                    </div>
-                    <button class="btn__secondary" style="border: none; width: 8px;">
-                        <div class="pagination__next"></div>
-                    </button>
-                    <button class="btn__third">90</button>
-                </div>
-            </div>
-            <div class="menubar__bottom box">
-                <button class="btn__primary btn--small btn__primary--active">領収書記載</button>
-                <button class="btn__primary btn--small">出勤選択</button>
-                <button class="btn__primary btn--small">状態選択</button>
-                <button class="btn__primary btn--small">取引先選択</button>
-                <button class="btn__primary btn--small">生地選択</button>
-                <button class="btn__primary btn--small">生地選択</button>
-                <button class="btn__primary btn--small">ST.No</button>
-            </div>
-        </div>
-    </div>
-    <div id="list" class="list box">
-        <div class="list__content" style="overflow-y: auto; padding: 0 70px;">
-            <div class="border list__box">
-                <table class="form__detail box">
-                    <tbody>
-                        <tr>
-                            <td style="width: 33.33%; padding: 12px 0">   
-                                <div class="form__custom">
-                                    <input id="1" class="form__checkbox" type="checkbox" checked>
-                                    <label class="form__toggle" for="1"></label>
-                                    <div class="title form__title--left">取引先名</div> 
-                                </div> 
-                            </td>
-                            <td>
-                                <div style="display: flex;">
-                                    <div class="form__text form__text--width box">選択</div>
-                                    <div class="form__text form__text--width box">おみせ+</div>
-                                </div>
-                            </td>
-                            <td>
-                                <div style="display: flex; justify-content: flex-end; padding-right: 20px;">
-                                    <div class="form__text form__text--width box">修正</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border" style="border-left: none; border-bottom: none;">   
-                                <div class="form__item form__item--left">
-                                    <div class="title title--small">スワツチ名</div> 
-                                    <div style="position: relative;">
-                                        <select class="section__select section__select--width">
-                                            <option value="">1回次/08:00</option>
-                                            <option value="">1回次/08:00</option>
-                                        </select>
-                                        <span class="triangle"></span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="border" style="width: 33.33%; height: 70px; border-bottom: none;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">#000</div> 
-                                    <div>番号/カラー名</div> 
-                                </div>
-                            </td>
-                            <td class="border" style="width: 33.33%; height: 70px; border-right: none; border-bottom: none;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">000￥</div> 
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="border list__box">
-                <table class="form__detail box">
-                    <tbody>
-                        <tr>
-                            <td style="width: 33.33%; padding: 12px 0">   
-                                <div class="form__custom">
-                                    <input id="2" class="form__checkbox" type="checkbox">
-                                    <label class="form__toggle" for="2"></label>
-                                    <div class="title form__title--left">取引先名</div> 
-                                </div> 
-                            </td>
-                            <td>
-   
-                            </td>
-                            <td>
-                                <div style="display: flex; justify-content: flex-end; padding-right: 20px;">
-                                    <div class="form__text form__text--width box">修正</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border" style="border-left: none; border-bottom: none;">   
-                                <div class="form__item form__item--left">
-                                    <div class="title title--small">工場名(連絡先)</div> 
-                                </div>
-                            </td>
-                            <td class="border" style="width: 33.33%; height: 70px; border-bottom: none;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">#000</div> 
-                                    <div>記事検索</div> 
-                                </div>
-                            </td>
-                            <td class="border" style="width: 33.33%; height: 70px; border-right: none; border-bottom: none;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">000￥</div> 
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="border list__box">
-                <table class="form__detail box">
-                    <tbody>
-                        <tr>
-                            <td style="width: 33.33%; padding: 12px 0">   
-                                <div class="form__custom">
-                                    <input id="3" class="form__checkbox" type="checkbox">
-                                    <label class="form__toggle" for="3"></label>
-                                    <div class="title form__title--left">取引先名</div> 
-                                </div> 
-                            </td>
-                            <td>
-                                <div style="display: flex;">
-                                    <div class="form__text form__text--width box">選択</div>
-                                    <div class="form__text form__text--width box">おみせ+</div>
-                                </div>
-                            </td>
-                            <td>
-                                <div style="display: flex; justify-content: flex-end; padding-right: 20px;">
-                                    <div class="form__text form__text--width box">修正</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2" class="border" style="border-left: none; border-bottom: none;">   
-                                <div class="form__item form__item--left">
-                                    <div class="title title--small">DKVBJG</div> 
-                                    <div>工場名 (010.000.000)</div> 
-                                </div>
-                            </td>
-                            <td class="border" style="width: 33.33%; height: 70px;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">#9</div> 
-                                    <div>番号/カラー名</div> 
-                                </div>
-                            </td>
-                            <td class="border" style="width: 33.33%; height: 70px; border-right: none;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">0000</div> 
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border" style="width: 33.33%; height: 70px; border-bottom: none;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">#000</div> 
-                                    <div>000/ABC</div> 
-                                </div>
-                            </td>
-                            <td class="border" style="width: 33.33%; height: 70px; border-bottom: none; border-right: none;">
-                                <div class="form__item">
-                                    <div style="font-weight: 600;">0000</div> 
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="box__btn">
-            <button class="btn__primary--active list__btn">待機に移動</button>
-        </div>
-    </div>
-    <div id="modal__form" class="modal__form">
-        <div class="overlay"></div>
-        <div class="modal__box modal__box--padding">
-            <div class="form__box">
-                <div class="form__create box">
-                    <div class="form__title title">販売取引先修正</div>
-                    <div class="form__content">
-                        <div class="form__group">
-                            <label class="form__label title">名前</label>
-                            <input class="form__input" type="text">
-                        </div>
-                        <div class="form__group">
-                            <label class="form__label title">名前</label>
-                            <input class="form__input" type="text">
-                        </div>
-                    </div>
-                    <div class="form__content">
-                        <div class="form__group">
-                            <label class="form__label title">
-                                担当者
-                                <span style="font-weight: normal;">（相手の堂々者）</span>
-                            </label>
-                            <input  class="form__input" type="text">
-                        </div>
-                        <div class="form__group">
-                            <label class="form__label title">担当者</label>
-                            <input class="form__input" type="text">
-                        </div>
-                    </div>
-                    <div class="form__content">
-                        <div class="form__group">
-                            <label class="form__label title">区分け分け</label>
-                            <input class="form__input" type="text">
-                        </div>
-                        <div class="form__group">
-                            <label class="form__label title">区分け分け</label>
-                            <input class="form__input" type="text">
-                        </div>
-                    </div>
-                    <div class="form__content">
-                        <div class="form__group">
-                            <label class="form__label title">最初繰越日</label>
-                            <input class="form__input" type="text">
-                        </div>
-                        <div class="form__group">
-                            <label class="form__label title">最初繰越日</label>
-                            <input class="form__input" type="text">
-                        </div>
-                    </div>
-                    <div class="form__content">
-                        <div class="form__group">
-                            <label class="form__label title">最初繰越日</label>
-                            <input class="form__input" type="text">
-                        </div>
-                    </div>
-                    <div class="form__btn-group">
-                        <button class="modal__btn--submit form__btn--create">修正完了</button>
-                        <button id="modal__btn" class="modal__btn--submit form__btn--create">キャンセル</button>
-                    </div>
-                </div>
-               <div class="border" style="border-radius: 4px; overflow: hidden; margin-top: 16px;">
-                    <table class="form__detail box">
-                        <tbody>
-                            <tr>
-                                <td style="width: 33.33%; padding: 12px 0">   
-                                    <div class="form__custom">
-                                        <input id="checked" class="form__checkbox" type="checkbox" checked>
-                                        <label class="form__toggle" for="checked"></label>
-                                        <div class="title form__title--left">取引先名</div> 
-                                    </div> 
-                                </td>
-                                <td colspan="2">
-                                    <div style="display: flex;">
-                                        <div class="form__text box">注</div>
-                                        <div class="form__text box">選択</div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2" class="border" style="border-left: none; border-bottom: none;">   
-                                    <div class="form__item form__item--left">
-                                        <div class="title title--small">スワツチ名</div> 
-                                        <div>工場名(連絡先)</div> 
-                                    </div>
-                                </td>
-                                <td class="border" style="width: 33.33%; height: 70px;">
-                                    <div class="form__item">
-                                        <div style="font-weight: 600;">#000</div> 
-                                        <div>000/ABC</div> 
-                                    </div>
-                                </td>
-                                <td class="border" style="width: 33.33%; height: 70px; border-right: none;">
-                                    <div class="form__item">
-                                        <div style="font-weight: 600;">0000</div> 
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border" style="width: 33.33%; height: 70px; border-bottom: none;">
-                                    <div class="form__item">
-                                        <div style="font-weight: 600;">#000</div> 
-                                        <div>000/ABC</div> 
-                                    </div>
-                                </td>
-                                <td class="border" style="width: 33.33%; height: 70px; border-bottom: none; border-right: none;">
-                                    <div class="form__item">
-                                        <div style="font-weight: 600;">0000</div> 
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-               </div>
-            </div>
-        </div>   
-    </div>
-    <div id="modal__toggle" class="modal__toggle">
-        <div class="toggle__btn toggle__btn--active toggle__btn--margin">
-            <div id="toggle__icon--up" class="toggle__icon toggle__icon--up toggle__icon--active">     
+<body style="height: 100%; overflow: auto;">
+    <div class="modal__toggle" style="top: 0">
+        <div class="toggle__btn toggle__btn--active">
+            <div id="toggle__icon--up" class="toggle__icon toggle__icon--up">     
             </div>
             <img class="toggle__oval" src="assets/icons/ic-oval.png" alt="" >
         </div>
-        <div class="toggle__btn">
-            <div id="toggle__icon--down" class="toggle__icon toggle__icon--down"></div>
+        <div class="toggle__btn toggle__btn--small">
+            <div id="toggle__icon--down" class="toggle__icon toggle__icon--down toggle__icon--active"></div>
         </div>
-        <div id="body__2" style="padding: 0 24px; background-color: #EFEFEF; overflow: auto; height: calc(100% - 82px);">
+        <div style="padding: 16px 24px; padding-top: 0; background-color: #EFEFEF; overflow: auto; height: calc(100% - 82px);">
             <div class="container box">
                 <div class="menubar__top menubar__top--padding">
                     <div class="menubar__group">
@@ -346,8 +26,8 @@
                             <img class="menubar__icon" src="assets/icons/ic-calendar.svg" alt="" >
                             <span class="menubar__day menubar__day--left"></span>
                         </div>
-                        <button class="btn--white btn--spacing btn__action btn__action--toggle">スワッチ検索</button>
-                        <button class="btn--white btn__action btn__action--toggle">生地検索</button>       
+                        <button class="btn--white btn--spacing btn__action">スワッチ検索</button>
+                        <button class="btn--white btn__action">生地検索</button>       
                     </div>
                     <div class="menubar__group">
                         <div class="menubar__datepicker">
@@ -358,12 +38,12 @@
                             <span class="triangle"></span>
                             <img class="menubar__icon" src="assets/icons/ic-user.svg" alt="" >
                         </div>
-                        <input class="btn--white input__money input__money--bold btn__action btn__toggle" type="text" placeholder="注文量">
+                        <input class="btn--white input__money input__money--bold btn__action" type="text" placeholder="注文量">
                         <span class="menubar__text">と</span>
-                        <input class="btn--white input__money input__money--bold btn__action btn__toggle input__money--right" type="text" placeholder="単価">
+                        <input class="btn--white input__money input__money--bold btn__action input__money--right" type="text" placeholder="単価">
                         <span class="menubar__text">を</span>   
                         <div class="menubar__datepicker" style="width: 100px; height: 36px;">
-                            <select class="section__select" style="width: 100px; padding-top: 0; padding-bottom: 0;  height: 36px; font-weight: 600; font-size: 14px;">
+                            <select class="section__select" style="width: 100px; padding-top: 0; padding-bottom: 0; height: 36px; font-weight: 600; font-size: 14px;">
                                 <option value="">追加</option>
                                 <option value="">追加</option>
                             </select>
@@ -503,7 +183,7 @@
                     </button>
                 </div>
             </div>
-            <div class="section__toggle section--hidden section--active">
+            <div>
                 <div class="section__menu box">
                     <div class="section__title title">
                         スワッチ検索
@@ -550,7 +230,7 @@
                     </div>
                 </div>
             </div>
-            <div id="calculator__first" class="section__calculator box section--hidden section__toggle">
+            <div id="calculator__first" class="section__calculator box section--hidden">
                 <div class="calculator__title">
                     <div class="title">注文量を入力してください。</div>
                     <div class="calculator__text">
@@ -578,9 +258,9 @@
                         </div>
                     </div>
                 </div>
-                <button id="btn__close--1" class="calculator__btn modal__btn--submit">決定</button>
+                <button class="calculator__btn modal__btn--submit">決定</button>
             </div>
-            <div id="calculator__second" class="section__calculator box section--hidden section__toggle">
+            <div id="calculator__second" class="section__calculator box section--hidden">
                 <div class="calculator__title">
                     <div class="title">注文量を入力してください。</div>
                     <div class="calculator__text">
@@ -606,9 +286,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="calculator__btn modal__btn--submit" id="btn__close--2">決定</button>
+                <button class="calculator__btn modal__btn--submit">決定</button>
             </div>
-            <div class="modal__first modal__toggle--primary">
+            <div class="modal__first" id="modal__first">
                 <div class="overlay">   
         
                 </div>
@@ -633,7 +313,6 @@
                     <div class="modal__option modal__option--padding">
                         <button class="modal__check modal__check--active">A</button>
                         <button class="modal__check">B</button>
-                        <button class="modal__check">C</button>
                         <button class="modal__check">D</button>
                         <button class="modal__check">E</button>
                         <button class="modal__check">F</button>
@@ -641,7 +320,6 @@
                         <button class="modal__check">H</button>
                         <button class="modal__check">I</button>
                         <button class="modal__check">J</button>
-                        <button class="modal__check">K</button>
                     </div>
                     <div class="modal__list">
                         <div class="modal__item modal__item--active modal__item--color">
@@ -721,7 +399,7 @@
                    </div>
                 </div>
             </div>
-            <div class="modal__second modal__toggle--primary">
+            <div class="modal__second" id="modal__second">
                 <div class="overlay">   
         
                 </div>
@@ -817,7 +495,7 @@
                            
                         </div>
                     </div>
-                    <button id="modal__btn" class="modal__btn--submit">キャンセル</button>
+                    <button id="modal__btn" class="modal__btn--submit" onclick="closeModal('btn__second', 'btn__primary--active', 'modal__second', 'modal__second--show')">キャンセル</button>
                    </div>
                 </div>
             </div>
