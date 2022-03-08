@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000;
+}
+h1 p {
+  margin: 0;
+}
