@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav {
   height: 150px;
   position: relative;
@@ -79,4 +80,327 @@
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 7px solid #757070;
+}
+
+.toggle-button-cover {
+  display: inline-block;
+  position: relative;
+  top: -50px;
+  width: 65px;
+  height: 35px;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.toggle-button-cover::before {
+  font-size: 10px;
+  position: absolute;
+  content: "";
+  top: -15px;
+}
+.toggle-button-cover:first-child {
+  margin-left: 0;
+}
+
+.button-cover {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button .knobs:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #cfcfcf;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.button .checkbox:checked + .knobs:before {
+  content: "";
+  left: 32px;
+  background-color: #394c8d;
+}
+
+.button .knobs,
+.button .knobs:before,
+.button .layer {
+  transition: 0.3s ease all;
+}
+
+.swatch-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+.swatch-left {
+  width: 40%;
+  padding-bottom: 100px;
+}
+.swatch-right {
+  position: relative;
+  width: 55%;
+}
+.swatch-right__button {
+  display: flex;
+  justify-content: end;
+}
+.swatch-right .swatch-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.swatch-right .toggle-button-cover:first-child::before {
+  content: "新商品";
+}
+.swatch-right .toggle-button-cover:nth-child(2)::before {
+  content: "お気に入り";
+}
+.swatch-right .toggle-button-cover:nth-child(3)::before {
+  content: "KAKAO露出.";
+}
+.swatch-right .toggle-button-cover:nth-child(4)::before {
+  content: "未進行";
+}
+.swatch-bg {
+  padding: 20px;
+}
+.swatch-code {
+  display: flex;
+}
+.swatch-code__img {
+  width: 40%;
+}
+.swatch-code__img img {
+  display: block;
+  width: 100%;
+}
+.swatch-code__input {
+  margin-left: 15px;
+  width: 55%;
+}
+.swatch-code__input input {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.swatch-code__input input:first-child {
+  margin-top: 0;
+}
+.swatch-code__label {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+}
+.swatch-code__label::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 3px #697b91;
+  border-right: solid 3px #697b91;
+  transform: rotate(135deg);
+}
+.swatch-code__label select {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+}
+.swatch-feature {
+  margin-top: 45px;
+}
+.swatch-feature__input {
+  margin-left: 15px;
+}
+.swatch-feature__input input {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.swatch-feature__input input:first-child {
+  margin-top: 0;
+}
+.swatch-feature__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.swatch-feature__label:first-child {
+  margin-top: 0;
+}
+.swatch-feature__label::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 3px #697b91;
+  border-right: solid 3px #697b91;
+  transform: rotate(135deg);
+}
+.swatch-feature__label select {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+}
+.swatch-clm {
+  text-align: right;
+  padding-bottom: 20px;
+  border-bottom: 0.5px #979797 solid;
+}
+.swatch-clm p {
+  cursor: pointer;
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+#close {
+  cursor: pointer;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#modal {
+  background: #fff;
+  color: #555;
+  width: 70%;
+  padding: 40px;
+  border-radius: 4px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: 100;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  display: none;
+}
+
+.swatch-modal {
+  display: flex;
+  justify-content: space-between;
+}
+.swatch-modal__add {
+  font-size: 20px;
+}
+.swatch-modal__cancel {
+  color: var(--primary-color);
+}
+.swatch-modal__input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.swatch-modal__text {
+  display: inline-block;
+  width: 48%;
+  height: 25px;
+  padding: 5px;
+}
+.swatch-modal__label {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 14px 7px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  transition: 0.2s;
+  background-image: url(/assets/img/file-upload.png);
+  background-size: 35px 35px;
+  background-position: 95.4%;
+  background-repeat: no-repeat;
+}
+.swatch-modal__label:hover {
+  box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.2);
+}
+.swatch-modal__label input {
+  display: none;
+}
+.swatch-modal__button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.swatch-modal__button button {
+  width: 30%;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding: 10px 0;
+}
+.swatch-modal__reset {
+  border: 0.5px solid var(--border-color);
+}
+.swatch-modal__register {
+  color: #fff;
+  background: var(--primary-color);
+  border: 0.5px solid var(--primary-color);
 }

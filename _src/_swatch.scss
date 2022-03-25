@@ -1,0 +1,152 @@
+.swatch {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 110px;
+    }
+    &-left {
+        width: 40%;
+        padding-bottom: 100px;
+    }
+    &-right {
+        position: relative;
+        width: 55%;
+        &__button {
+            display: flex;
+            justify-content: end;
+        }
+        .swatch-bg {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .toggle-button-cover {
+            &:first-child {
+                &::before {
+                    content: '新商品';
+                }
+            }
+            &:nth-child(2) {
+                &::before {
+                    content: 'お気に入り';
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    content: 'KAKAO露出.';
+                }
+            }
+            &:nth-child(4) {
+                &::before {
+                    content: '未進行';
+                }
+            }
+        }
+    }
+    &-bg {
+        padding: 20px;
+    }
+    &-code {
+        display: flex;
+        &__img {
+            width: 40%;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &__input {
+            margin-left: 15px;
+            width: 55%;
+            input {
+                display: inline-block;
+                width: 100%;
+                height: 25px;
+                padding: 5px;
+                margin-top: 10px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+        &__label {
+            position: relative;
+            display: block;
+            margin-top: 10px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 6px;
+                right: 10px;
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-top: solid 3px #697b91;
+                border-right: solid 3px #697b91;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            select {
+                display: inline-block;
+                width: 100%;
+                height: 30px;
+                padding: 5px;
+            }
+        }
+    }
+    &-feature {
+        margin-top: 45px;
+        &__input {
+            margin-left: 15px;
+            input {
+                display: inline-block;
+                width: 100%;
+                height: 25px;
+                padding: 5px;
+                margin-top: 10px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+        &__label {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            &:first-child {
+                margin-top: 0;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 6px;
+                right: 10px;
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-top: solid 3px #697b91;
+                border-right: solid 3px #697b91;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            select {
+                display: inline-block;
+                width: 100%;
+                height: 30px;
+                padding: 5px;
+            }
+        }
+    }
+    &-clm {
+        text-align: right;
+        padding-bottom: 20px;
+        border-bottom: 0.5px #979797 solid;
+        p {
+            cursor: pointer;
+            display: inline-block;
+            color: var(--primary-color);
+        }
+    }
+}

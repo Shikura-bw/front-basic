@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 13</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_add.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar box" id="js-btn">
+            <img src="assets/icons/ic-tomato.svg" alt="" width="35px">
+            <img id="btn__show" src="assets/icons/ic-note.svg" alt="" width="38px">
+        </div>
+        <div class="menubar">
+            <div class="menubar__top box">
+                <div class="menubar__group">
+                    <img id="btn__prev" class="btn__prev" src="assets/icons/ic-previous.svg" alt="" >
+                    <div class="menubar__datepicker menubar__datepicker--main">
+                        <input class="datepicker" type="text" id="datepicker__first" autocomplete="off">
+                        <img class="menubar__icon" src="assets/icons/ic-calendar.svg" alt="" >
+                        <span class="menubar__day"></span>
+                    </div>
+                    <img id="btn__next" class="btn__next" src="assets/icons/ic-next.svg" alt="">
+                </div>
+                <div class="menubar__btn-group">
+                    <button class="btn__secondary">注</button>
+                    <button class="btn__secondary">待</button>
+                    <button class="btn__secondary">出</button>
+                </div>
+            </div>
+            <div class="menubar__bottom box">
+                <button class="btn__primary btn--small btn__primary--active">領収書記載</button>
+                <button class="btn__primary btn--small">出勤選択</button>
+                <button class="btn__primary btn--small">状態選択</button>
+                <button class="btn__primary btn--small">取引先選択</button>
+                <button class="btn__primary btn--small">生地選択</button>
+                <button class="btn__primary btn--small">生地選択</button>
+                <button class="btn__primary btn--small">ST.No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="swatch-inner">
+        <div class="swatch-left js-height">
+            <div class="swatch-code swatch-bg box">
+                <div class="swatch-code__img">
+                    <img src="https://placehold.jp/200x300.jpg" alt="">
+                </div>
+                <div class="swatch-code__input">
+                    <input type="text" placeholder="名前">
+                    <input type="text" placeholder="ST_CODE">
+                    <input type="text" placeholder="短縮">
+                    <input type="text" placeholder="混用率/幅">
+                    <label class="swatch-code__label">
+                        <select placeholder="分類選択">
+                            <option value="テキスト1">テキスト1</option>
+                            <option value="テキスト2">テキスト2</option>
+                            <option value="テキスト3">テキスト3</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <div class="swatch-feature swatch-bg box">
+                <div class="swatch-feature__input">
+                    <label class="swatch-feature__label">
+                        <select placeholder="担当倉庫">
+                            <option value="テキスト4">テキスト4</option>
+                            <option value="テキスト5">テキスト5</option>
+                            <option value="テキスト6">テキスト6</option>
+                        </select>
+                    </label>
+                    <label class="swatch-feature__label">
+                        <select placeholder="生地単位">
+                            <option value="テキスト7">テキスト7</option>
+                            <option value="テキスト8">テキスト8</option>
+                            <option value="テキスト9">テキスト9</option>
+                        </select>
+                    </label>
+                    <input type="text" placeholder="1Y->重さ(kg)">
+                    <input type="text" placeholder="倉庫位置">
+                    <input type="text" placeholder="検索.Tag">
+                </div>
+            </div>
+        </div>
+        <div class="swatch-right js-height">
+            <div class="swatch-right__button">
+                <div class="toggle-button-cover">
+                    <div class="button-cover">
+                      <div class="button">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="toggle-button-cover">
+                    <div class="button-cover">
+                      <div class="button">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="toggle-button-cover">
+                    <div class="button-cover">
+                      <div class="button">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="toggle-button-cover">
+                    <div class="button-cover">
+                      <div class="button">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swatch-bg box">
+                <div class="swatch-clm">
+                    <p id="open">列番号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mask" class="hidden"></div>
+    <div id="modal" class="hidden">
+        <div class="swatch-modal">
+            <p class="swatch-modal__add">コラム追加</p>
+            <p class="swatch-modal__cancel" id="close">キャンセル</p>
+        </div>
+        <div class="swatch-modal__input">
+            <input class="swatch-modal__text" type="text" placeholder="生地の始めの番号">
+            <input class="swatch-modal__text" type="text" placeholder="生地の端番号">
+        </div>
+        <label class="swatch-modal__label">
+            イメージを読み込む
+            <input type="file">
+        </label>
+        <div class="swatch-modal__button">
+            <button class="swatch-modal__reset">初期化</button>
+            <button class="swatch-modal__register">登録.</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
+</body>
+</html>
