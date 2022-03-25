@@ -1,9 +1,82 @@
-h1 {
-  color: #000;
+.nav {
+  height: 150px;
+  position: relative;
+  padding-bottom: 24px;
+  transition: 0.5s;
 }
-h1 p {
-  margin: 0;
+.nav-icon {
+  text-align: center;
 }
-h1 a {
-  font-variant: normal;
+.nav-icon img:last-child {
+  padding-left: 0;
+}
+.nav-contents {
+  display: none;
+  margin-left: 20px;
+}
+.nav-bar .container {
+  width: 100%;
+  justify-content: space-between;
+}
+.nav-bar .nav {
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 0.5s;
+  height: 60%;
+  width: 25%;
+  flex-basis: content;
+}
+.nav-bar .nav-inner {
+  display: flex;
+}
+.nav-bar .nav-icon img {
+  display: block;
+}
+.nav-bar .sidebar {
+  align-items: flex-start;
+}
+.nav-bar .nav-contents {
+  display: block;
+}
+.nav-bar .nav-contents p {
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.nav-bar .nav-contents p:first-child {
+  margin-top: 0;
+}
+.nav-bar .menubar {
+  width: 75%;
+  flex-basis: content;
+}
+.nav-bar .borrow {
+  transition: 0.5s;
+  margin-top: 50px;
+  bottom: -8px;
+}
+.nav-bar .borrow::before {
+  transition: 0.8s;
+  transform: rotate(-180deg);
+}
+
+.borrow {
+  position: relative;
+  bottom: 8px;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 10px;
+  transition: 0.8s;
+}
+.borrow::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 42%;
+  width: 0;
+  height: 0;
+  transition: 0.8s;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #757070;
 }
