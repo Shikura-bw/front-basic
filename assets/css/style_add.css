@@ -358,6 +358,26 @@
   display: inline-block;
   color: var(--primary-color);
 }
+.swatch-manage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.swatch-manage__button {
+  display: inline-block;
+  width: 180px;
+  padding: 10px 20px;
+  border-radius: 17px;
+  color: #fff;
+}
+.swatch-manage__button:first-child {
+  background: var(--primary-color);
+}
+.swatch-manage__button:last-child {
+  background: var(--warning-color);
+}
 
 #close {
   cursor: pointer;
