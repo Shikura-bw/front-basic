@@ -10,35 +10,43 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar box" id="js-btn">
-            <img src="assets/icons/ic-tomato.svg" alt="" width="35px">
-            <img id="btn__show" src="assets/icons/ic-note.svg" alt="" width="38px">
-        </div>
-        <div class="menubar">
-            <div class="menubar__top box">
-                <div class="menubar__group">
-                    <img id="btn__prev" class="btn__prev" src="assets/icons/ic-previous.svg" alt="" >
-                    <div class="menubar__datepicker menubar__datepicker--main">
-                        <input class="datepicker" type="text" id="datepicker__first" autocomplete="off">
-                        <img class="menubar__icon" src="assets/icons/ic-calendar.svg" alt="" >
-                        <span class="menubar__day"></span>
-                    </div>
-                    <img id="btn__next" class="btn__next" src="assets/icons/ic-next.svg" alt="">
+        <div class="sidebar box nav">
+            <div class="nav-inner">
+                <div class="nav-icon">
+                    <img src="assets/icons/ic-tomato.svg" alt="" width="35px">
+                    <img id="btn__show" src="assets/icons/ic-note.svg" alt="" width="38px">
                 </div>
-                <div class="menubar__btn-group">
-                    <button class="btn__secondary">注</button>
-                    <button class="btn__secondary">待</button>
-                    <button class="btn__secondary">出</button>
+                <div class="nav-contents">
+                    <p>ダミー</p>
+                    <p>ダミー</p>
+                    <p>ダミー</p>
+                    <p>ダミー</p>
                 </div>
             </div>
-            <div class="menubar__bottom box">
-                <button class="btn__primary btn--small btn__primary--active">領収書記載</button>
-                <button class="btn__primary btn--small">出勤選択</button>
-                <button class="btn__primary btn--small">状態選択</button>
-                <button class="btn__primary btn--small">取引先選択</button>
-                <button class="btn__primary btn--small">生地選択</button>
-                <button class="btn__primary btn--small">生地選択</button>
-                <button class="btn__primary btn--small">ST.No</button>
+            <div class="borrow" id="js-btn"></div>
+        </div>
+        <div class="swatch-category">
+            <div class="swatch-category__top">
+                <div class="swatch-category__select">
+                    <label class="swatch-category__label">
+                        <select placeholder="分類選択">
+                            <option value="分類1">分類1</option>
+                            <option value="分類2">分類2</option>
+                            <option value="分類3">分類3</option>
+                        </select>
+                    </label>
+                    <label class="swatch-category__label">
+                        <select placeholder="状態情報">
+                            <option value="情報1">情報1</option>
+                            <option value="情報2">情報2</option>
+                            <option value="情報3">情報3</option>
+                        </select>
+                    </label>
+                </div>
+                <p class="swatch-category__add">スワッチ追加</p>
+            </div>
+            <div class="swatch-category__search">
+                <input type="text" placeholder="生地検索">
             </div>
         </div>
     </div>
