@@ -1,7 +1,13 @@
+.toggle-button {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  padding-top: 20px;
+}
+
 .toggle-button-cover {
     display: inline-block;
     position: relative;
-    top: -50px;
     width: 65px;
     height: 35px;
     box-sizing: border-box;
