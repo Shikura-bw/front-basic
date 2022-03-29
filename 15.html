@@ -28,7 +28,7 @@
         <div class="setting-top">
             <div class="setting-top__clm box">
                 <h3 class="setting-top__hd03">出庫設定</h3>
-                <p class="setting-top__text js-height">出庫する際に一つずつ出庫するか集めて出庫するかを決定</p>
+                <p class="setting-top__text js-height" style="height: 28px;">出庫する際に一つずつ出庫するか集めて出庫するかを決定</p>
                 <div class="toggle-button setting-button">
                     <div class="toggle-button-cover">
                         <div class="button-cover">
@@ -52,7 +52,7 @@
             </div>
             <div class="setting-top__clm box">
                 <h3 class="setting-top__hd03">生地単位設定</h3>
-                <p class="setting-top__text js-height">注文及び入出庫等に関する処理単位</p>
+                <p class="setting-top__text js-height" style="height: 28px;">注文及び入出庫等に関する処理単位</p>
                 <div class="toggle-button setting-button">
                     <div class="toggle-button-cover">
                         <div class="button-cover">
@@ -84,7 +84,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="setting-contents">
@@ -93,7 +92,7 @@
             <div class="setting-store__clm box">
                 <div class="setting-store__topic">
                     <h3 class="setting-store__hd03">商店1</h3>
-                    <p class="setting-store__renovation">修整</p>
+                    <p class="setting-store__click">修整</p>
                 </div>
                 <table class="setting-store__table">
                     <tbody>
@@ -127,13 +126,13 @@
             <div class="setting-store__clm box">
                 <div class="setting-store__topic">
                     <h3 class="setting-store__hd03">商店2</h3>
-                    <p class="setting-store__renovation">修整</p>
+                    <p class="setting-store__click">修整</p>
                 </div>
                 <table class="setting-store__table">
                     <tbody>
                         <tr>
                             <td class="setting-store__info">住所</td>
-                            <td class="setting-store__profile">テキスト テキスト テキスト</td>
+                            <td class="setting-store__profile">テキストテキストテキスト</td>
                         </tr>
                         <tr>
                             <td class="setting-store__info">番号</td>
@@ -159,230 +158,609 @@
                 </table>
             </div>
         </div>
-        <div class="setting-register">
-            <div class="setting-register__clm box">
-                <div class="setting-register__topic">
-                    <h3 class="setting-register__hd03">職員分類登録</h3>
-                    <button class="setting-register__btn"></button>
-                </div>
-                <div class="setting-register__inner">
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
+        <ul class="setting-register">
+            <li class="setting-register__clm box" id="clerk">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">職員分類登録</h3>
+                        <button class="setting-register__btn works_modal_open" data-modal-open="modal-1"></button>
                     </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="setting-register__clm box">
-                <div class="setting-register__topic">
-                    <h3 class="setting-register__hd03">銀行情報登録</h3>
-                    <button class="setting-register__btn"></button>
-                </div>
-                <div class="setting-register__inner">
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
+                    <div class="setting-register__inner">
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-2"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-2"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-2"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-2"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-2"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="setting-register__clm box">
-                <div class="setting-register__topic">
-                    <h3 class="setting-register__hd03">ピックアップ時間登録</h3>
-                    <button class="setting-register__btn"></button>
-                </div>
-                <div class="setting-register__inner">
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
+                <div class="works_modal_wrapper" data-modal="modal-1">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>職員分類登録追加</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>内容</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">追加</button>
                     </div>
                 </div>
-            </div>
-            <div class="setting-register__clm box">
-                <div class="setting-register__topic">
-                    <h3 class="setting-register__hd03">倉庫目録登録</h3>
-                    <button class="setting-register__btn"></button>
-                </div>
-                <div class="setting-register__inner">
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
+                <div class="works_modal_wrapper" data-modal="modal-2">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>職員分類登録修正</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>内容</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">修整</button>
                     </div>
                 </div>
-            </div>
-            <div class="setting-register__clm box">
-                <div class="setting-register__topic">
-                    <h3 class="setting-register__hd03">取引先分類登録</h3>
-                    <button class="setting-register__btn"></button>
-                </div>
-                <div class="setting-register__inner">
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
+            </li>
+            <li class="setting-register__clm box" id="bank">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">銀行情報登録</h3>
+                        <button class="setting-register__btn works_modal_open" data-modal-open="modal-3"></button>
                     </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="setting-register__clm box">
-                <div class="setting-register__topic">
-                    <h3 class="setting-register__hd03">生地の分類登録</h3>
-                    <button class="setting-register__btn"></button>
-                </div>
-                <div class="setting-register__inner">
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
+                    <div class="setting-register__inner">
+                        <div class="setting-register__txt">
+                            <p>銀行名<br>3333-15-******* | 名義者</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-4"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>銀行名<br>3333-15-******* | 名義者</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-4"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>銀行名<br>3333-15-******* | 名義者</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-4"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>銀行名<br>3333-15-******* | 名義者</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-4"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>銀行名<br>3333-15-******* | 名義者</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-4"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="setting-register__clm box">
-                <div class="setting-register__topic">
-                    <h3 class="setting-register__hd03">加工オプション追加</h3>
-                    <button class="setting-register__btn"></button>
-                </div>
-                <div class="setting-register__inner">
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
-                    </div>
-                    <div class="setting-register__txt">
-                        <p>テキストテキスト</p>
-                        <div class="setting-register__pen"></div>
+                <div class="works_modal_wrapper" data-modal="modal-3">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>銀行情報追加</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>銀行 / 口座番号</p>
+                            <label class="works_modal_label">
+                                <select placeholder="銀行">
+                                    <option value="銀行1">銀行1</option>
+                                    <option value="銀行2">銀行2</option>
+                                    <option value="銀行3">銀行3</option>
+                                </select>
+                            </label>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <input type="text" class="works_modal_num">
+                        </div>
+                        <button class="works_modal_btn">추가</button>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="works_modal_wrapper" data-modal="modal-4">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>銀行情報修正</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>銀行 / 口座番号</p>
+                            <label class="works_modal_label">
+                                <select placeholder="銀行">
+                                    <option value="銀行1">銀行1</option>
+                                    <option value="銀行2">銀行2</option>
+                                    <option value="銀行3">銀行3</option>
+                                </select>
+                            </label>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <input type="text" class="works_modal_num">
+                        </div>
+                        <button class="works_modal_btn">추가</button>
+                    </div>
+                </div>
+            </li>
+            <li class="setting-register__clm box" id="pickup">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">ピックアップ時間登録</h3>
+                        <button class="setting-register__btn works_modal_open" data-modal-open="modal-5"></button>
+                    </div>
+                    <div class="setting-register__inner">
+                        <div class="setting-register__txt">
+                            <p>00回目 | 00:00</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-6"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>00回目 | 00:00</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-6"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>00回目 | 00:00</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-6"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>00回目 | 00:00</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-6"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>00回目 | 00:00</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-6"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-5">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>ピックアップ時間登録</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>配送回名</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>時間.</p>
+                            <div class="work_modal_time">
+                                <input type="text" placeholder="時">
+                                <input type="text" placeholder="分">
+                            </div>
+                        </div>
+                        <button class="works_modal_btn">追加</button>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-6">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>ピックアップ時間修正</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>配送回名</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>時間.</p>
+                            <div class="work_modal_time">
+                                <input type="text" placeholder="時">
+                                <input type="text" placeholder="分">
+                            </div>
+                        </div>
+                        <button class="works_modal_btn">修整</button>
+                    </div>
+                </div>
+            </li>
+            <li class="setting-register__clm box" id="list">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">倉庫リストの追加</h3>
+                        <button class="setting-register__btn works_modal_open" data-modal-open="modal-7"></button>
+                    </div>
+                    <div class="setting-register__inner">
+                        <div class="setting-register__txt">
+                            <p>テキストテキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-8"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-8"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-8"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-8"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-8"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-7">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>倉庫リストの追加</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>蔵の名</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>計算方式</p>
+                            <label class="works_modal_label">
+                                <select placeholder="計算方式選択">
+                                    <option value="計算方式選択1">計算方式選択1</option>
+                                    <option value="計算方式選択2">計算方式選択2</option>
+                                    <option value="計算方式選択3">計算方式選択3</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="works_modal_inner list_inner">
+                            <p>Y -> K 変換</p>
+                            <div class="toggle-button">
+                                <div class="toggle-button-cover">
+                                    <div class="button-cover">
+                                        <div class="button">
+                                            <input type="checkbox" class="checkbox">
+                                            <div class="knobs"></div>
+                                            <div class="layer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works_modal_inner list_inner">
+                            <p>出庫台の使用有無</p>
+                            <div class="toggle-button">
+                                <div class="toggle-button-cover">
+                                    <div class="button-cover">
+                                        <div class="button">
+                                            <input type="checkbox" class="checkbox">
+                                            <div class="knobs"></div>
+                                            <div class="layer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>包装方式</p>
+                            <div class="works_modal_enclose">
+                                <input type="text" placeholder="束">
+                                <input type="text" placeholder="節">
+                                <input type="text" placeholder="紙袋">
+                            </div>
+                        </div>
+                        <div class="works_modal_inner list_inner">
+                            <p>出庫台の使用有無</p>
+                            <div class="toggle-button">
+                                <div class="toggle-button-cover">
+                                    <div class="button-cover">
+                                        <div class="button">
+                                            <input type="checkbox" class="checkbox">
+                                            <div class="knobs"></div>
+                                            <div class="layer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>飛ばし</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>説明.</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">追加</button>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-8">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>倉庫リストの修整</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>蔵の名</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>計算方式</p>
+                            <label class="works_modal_label">
+                                <select placeholder="計算方式選択">
+                                    <option value="計算方式選択1">計算方式選択1</option>
+                                    <option value="計算方式選択2">計算方式選択2</option>
+                                    <option value="計算方式選択3">計算方式選択3</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="works_modal_inner list_inner">
+                            <p>Y -> K 変換</p>
+                            <div class="toggle-button">
+                                <div class="toggle-button-cover">
+                                    <div class="button-cover">
+                                        <div class="button">
+                                            <input type="checkbox" class="checkbox">
+                                            <div class="knobs"></div>
+                                            <div class="layer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works_modal_inner list_inner">
+                            <p>出庫台の使用有無</p>
+                            <div class="toggle-button">
+                                <div class="toggle-button-cover">
+                                    <div class="button-cover">
+                                        <div class="button">
+                                            <input type="checkbox" class="checkbox">
+                                            <div class="knobs"></div>
+                                            <div class="layer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>包装方式</p>
+                            <div class="works_modal_enclose">
+                                <input type="text" placeholder="束">
+                                <input type="text" placeholder="節">
+                                <input type="text" placeholder="紙袋">
+                            </div>
+                        </div>
+                        <div class="works_modal_inner list_inner">
+                            <p>出庫台の使用有無</p>
+                            <div class="toggle-button">
+                                <div class="toggle-button-cover">
+                                    <div class="button-cover">
+                                        <div class="button">
+                                            <input type="checkbox" class="checkbox">
+                                            <div class="knobs"></div>
+                                            <div class="layer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>飛ばし</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>説明.</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">修整</button>
+                    </div>
+                </div>
+            </li>
+            <li class="setting-register__clm box" id="customer">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">取引先分類登録</h3>
+                        <button class="setting-register__btn works_modal_open" data-modal-open="modal-9"></button>
+                    </div>
+                    <div class="setting-register__inner">
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-10"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-10"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-10"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-10"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-10"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-9">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>取引先分類登録</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>内容</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">追加</button>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-10">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>取引先分類修整</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>内容</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">修整</button>
+                    </div>
+                </div>
+            </li>
+            <li class="setting-register__clm box" id="material">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">生地の分類登録</h3>
+                        <button class="setting-register__btn works_modal_open" data-modal-open="modal-11"></button>
+                    </div>
+                    <div class="setting-register__inner">
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-12"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-12"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-12"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-12"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-12"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-11">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>生地の分類登録</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>内容</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">追加</button>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-12">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>生地の分類修整</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>内容</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">修整</button>
+                    </div>
+                </div>
+            </li>
+            <li class="setting-register__clm box" id="option">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">加工オプション追加</h3>
+                        <button class="setting-register__btn works_modal_open" data-modal-open="modal-13"></button>
+                    </div>
+                    <div class="setting-register__inner">
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-14"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-14"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-14"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-14"></div>
+                        </div>
+                        <div class="setting-register__txt">
+                            <p>テキストテキスト</p>
+                            <div class="setting-register__pen works_modal_open" data-modal-open="modal-14"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-13">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>加工オプション追加</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>オプション名</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>説明</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">追加</button>
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-14">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_content">
+                            <h3>加工オプション修整</h3>
+                            <p class="works_modal_close">キャンセル</p>
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>オプション名</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <div class="works_modal_inner">
+                            <p>説明</p>
+                            <input type="text" class="works_modal_name">
+                        </div>
+                        <button class="works_modal_btn">修整</button>
+                    </div>
+                </div>
+            </li>
+            <li class="setting-register__clm setting-register__img box" id="print">
+                <div class="works_image">
+                    <div class="setting-register__topic">
+                        <h3 class="setting-register__hd03">取引明細書印刷形式設定</h3>
+                        <p class="setting-store__click works_modal_open" data-modal-open="modal-15">大きく見る</p>
+                    </div>
+                    <div class="setting-register__inner">
+                        <img src="assets/img/img-receipt_clm.png" alt="">
+                    </div>
+                </div>
+                <div class="works_modal_wrapper" data-modal="modal-15">
+                    <div class="works_modal_mask"></div>
+                    <div class="works_modal_window box">
+                        <div class="works_modal_img">
+                            <img src="assets/img/img-receipt_modal.png" alt="">
+                        </div>
+                        <button class="works_modal_close works_modal_btn">閉め</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
-
-    <div id="mask" class="hidden"></div>
-    <div id="modal" class="hidden">
-        <div class="setting-modal">
-            <p class="setting-modal__add">コラム追加</p>
-            <p class="setting-modal__cancel" id="close">キャンセル</p>
-        </div>
-        <div class="setting-modal__input">
-            <input class="setting-modal__text" type="text" placeholder="生地の始めの番号">
-            <input class="setting-modal__text" type="text" placeholder="生地の端番号">
-        </div>
-        <label class="setting-modal__label">
-            イメージを読み込む
-            <input type="file">
-        </label>
-        <div class="setting-modal__button">
-            <button class="setting-modal__reset">初期化</button>
-            <button class="setting-modal__register">登録.</button>
-        </div>
-    </div>
-
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/setting.js"></script>
 </body>
 </html>
