@@ -23,9 +23,11 @@
   padding-right: 10px;
   padding-left: 10px;
   transition: 0.5s;
-  height: 60%;
+  height: 85%;
   width: 25%;
   flex-basis: content;
+  position: absolute;
+  z-index: 100;
 }
 .nav-bar .nav-inner {
   display: flex;
@@ -52,7 +54,7 @@
 }
 .nav-bar .borrow {
   transition: 0.5s;
-  margin-top: 50px;
+  margin-top: 68vh;
   bottom: -8px;
 }
 .nav-bar .borrow::before {
@@ -67,7 +69,7 @@
   margin-top: 10px;
   width: 100%;
   height: 10px;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 .borrow::before {
   content: "";
