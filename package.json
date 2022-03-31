@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Shikura-bw/front-basic#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.4",
     "gulp": "^4.0.2",
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
