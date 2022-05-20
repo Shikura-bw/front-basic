@@ -8,7 +8,7 @@ const plumber = require('gulp-plumber');
 // ------------------------------------scss→css
 gulp.task('sass', function () {
 	return gulp.src([
-		'_src/style.scss',
+		'./_src/style.scss',
 	])
 		.pipe(sass({ outputStyle: 'expanded' }))
 		.pipe(postcss([
@@ -21,7 +21,7 @@ gulp.task('sass', function () {
 });
 gulp.task('watch', () => {
 	gulp.watch([
-		'_src/*.scss',
+		'./_src/*.scss',
 	], gulp.series('sass'));
 });
 gulp.task('default', gulp.parallel('sass', 'watch'));
