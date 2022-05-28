@@ -359,6 +359,44 @@
     }
 }
 
+.trade {
+    h3 {
+        font-weight: bold;
+    }
+    .works_modal_inner {
+        justify-content: unset;
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+        p {
+            width: 18%;
+        }
+    }
+    .works_modal_label {
+        width: 37.5%;
+    }
+    .works_modal_btn {
+        background: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        width: 185px;
+        margin: 50px auto 0;
+        padding: 10px;
+    }
+    .works_modal_num {
+        padding: 10px 20px;
+    }
+    .works_modal_trade {
+        margin-left: 20px;
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+    .works_modal_cash {
+        padding-left: 5px;
+    }
+}
+
 .works_modal_btn {
     cursor: pointer;
     display: block;

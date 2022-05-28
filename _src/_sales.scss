@@ -3,7 +3,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 50px;
+    &__icon {
+        height: 30px;
+        position: relative;
+        &--01 {
+            content: "";
+            position: absolute;
+            background-image: url(/assets/img/icon-sales_01.jpg);
+            background-size: 32px 30px;
+            top: 0;
+            right: 80px;
+            width: 31px;
+            height: 30px;
+            display: inline-block;
+        }
+        &--02 {
+            content: "";
+            position: absolute;
+            background-image: url(/assets/img/icon-sales_02.jpg);
+            background-size: 32px 30px;
+            top: 0;
+            right: 15px;
+            width: 31px;
+            height: 30px;
+            display: inline-block;
+        }
+    }
     &__earning {
     display: flex;
     justify-content: space-between;
@@ -182,7 +208,67 @@
     }
 }
 
+.trade-button {
+    .button-cover {
+        border: 1px solid var(--border-color);
+        .knobs {
+            &::before {
+                top: 2px;
+            }
+        }
+    }
+    span {
+        display: inline-block;
+        padding-left: 75px;
+        padding-top: 8px;
+        width: 170px;
+    }
+}
+
+.trade-asterisk {
+    position: relative;
+    &::before {
+        content: "*";
+        position: absolute;
+        top: 1px;
+        left: -10px;
+        width: 1px;
+        height: 1px;
+        color: #956f6f;
+    }
+}
+
+.trade-btn {
+    display: flex;
+    width: 65%;
+    margin: 50px auto 0;
+    justify-content: space-between;
+    &__modification {
+        background: var(--yellow-color);
+        border: 1px solid var(--yellow-color);
+    }
+    &__delete {
+        background: #c02a2a;
+        border: 1px solid #c02a2a;
+    }
+    &__register {
+        display: block;
+        margin: auto;
+        background: var(--primary-color);
+        border: 1px solid var(--primary-color);
+    }
+}
+
 .dis-flex {
     display: flex;
     justify-content: space-between;
+}
+
+.condition {
+    width: 40%;
+    .works_modal_inner {
+        p {
+            width: 45%;
+        }
+    }
 }

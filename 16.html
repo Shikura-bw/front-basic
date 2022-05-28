@@ -55,7 +55,75 @@
                         </select>
                     </label>
                 </div>
-                <p class="luggage-category__add">売上取引先追加</p>
+                <p class="luggage-category__add works_modal_open" data-modal-open="modal">売上取引先追加</p>
+            </div>
+            <div class="works_modal_wrapper" data-modal="modal">
+                <div class="works_modal_mask"></div>
+                <div class="works_modal_window trade">
+                    <div class="works_modal_content">
+                        <h3>売上取引先追加</h3>
+                        <p class="works_modal_close">キャンセル</p>
+                    </div>
+                    <div class="works_modal_inner">
+                        <p class="trade-asterisk">担当番号<br>(自社担当者)</p>
+                        <label class="works_modal_label">
+                            <select placeholder="分類選択">
+                                <option value="分類選択1">分類選択1</option>
+                                <option value="分類選択2">分類選択2</option>
+                                <option value="分類選択3">分類選択3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="works_modal_inner">
+                        <p class="trade-asterisk">取引先</p>
+                        <input type="text" class="works_modal_num" placeholder="取引先名">
+                        <div class="toggle-button-cover trade-button">
+                            <div class="button-cover">
+                                <div class="button">
+                                <input type="checkbox" class="checkbox">
+                                    <div class="knobs"></div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                            <span>VAT請求</span>
+                        </div>
+                    </div>
+                    <div class="works_modal_inner">
+                        <p class="trade-asterisk">担当者<br>(取引先の担当者)</p>
+                        <input type="text" class="works_modal_num" placeholder="名">
+                    </div>
+                    <div class="works_modal_inner">
+                        <p class="trade-asterisk">連絡所</p>
+                        <input type="text" class="works_modal_num" placeholder="010-0000-0000">
+                    </div>
+                    <div class="works_modal_inner">
+                        <p class="trade-asterisk">区分</p>
+                        <label class="works_modal_label">
+                            <select placeholder="分類選択">
+                                <option value="分類選択1">分類選択1</option>
+                                <option value="分類選択2">分類選択2</option>
+                                <option value="分類選択3">分類選択3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="works_modal_inner">
+                        <p>住所</p>
+                        <input type="text" class="works_modal_num w75p" placeholder="取引先 住所">
+                    </div>
+                    <div class="works_modal_inner">
+                        <p>最初の繰越日</p>
+                        <input type="text" class="works_modal_num" placeholder="2022.00.00(月)">
+                    </div>
+                    <div class="works_modal_inner">
+                        <p>初繰越金</p>
+                        <input type="text" class="works_modal_num" placeholder="99.999.99W">
+                    </div>
+                    <div class="works_modal_inner">
+                        <p>現米寿残高</p>
+                        <p>99.999.99W</p>
+                    </div>
+                    <button class="works_modal_btn">登録</button>
+                </div>
             </div>
             <div class="luggage-category__search">
                 <input type="text" placeholder="取引先名">
@@ -63,8 +131,214 @@
         </div>
     </div>
 
+    <div class="sales-trading__icon">
+        <div class="sales-trading__icon--01 works_modal_open" data-modal-open="condition"></div>
+        <div class="sales-trading__icon--02"></div>
+        <div class="works_modal_wrapper" data-modal="condition">
+            <div class="works_modal_mask"></div>
+            <div class="works_modal_window trade condition">
+                <div class="works_modal_content">
+                    <h3>検索条件</h3>
+                    <p class="works_modal_close">キャンセル</p>
+                </div>
+                <div class="works_modal_inner">
+                    <p>最終取引日</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>注文関連</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>入金関連</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>合計</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>前日繰越金</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>一般出庫</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>サンプル出庫</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>返品</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>入金</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>DC</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>別途VAT</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>運賃</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>払い戻すこと</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>付帯費用</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>小計</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p>月合計</p>
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="sales-trading">
-        <div class="sales-trading__earning">
+        <div class="sales-trading__earning">    
             <h3 class="sales-trading__title">売上</h3>
             <div class="sales-trading__input">
                 <input type="text" placeholder="2022.00.00(今日) ~ 2022.00.00(今日)">
@@ -173,17 +447,131 @@
     </div>
 
     <div class="sales-footer">
-        <div class="sales-footer__left">
+        <div class="sales-footer__left works_modal_open" data-modal-open="modification">
             <button>取引先情報修正</button>
         </div>
         <div class="sales-footer__right">
-            <button>入金</button>
+            <button class="works_modal_open" data-modal-open="payment">入金</button>
             <button>精算データの確認</button>
+        </div>
+        <div class="works_modal_wrapper" data-modal="modification">
+            <div class="works_modal_mask"></div>
+            <div class="works_modal_window trade">
+                <div class="works_modal_content">
+                    <h3>取引先情報修正</h3>
+                    <p class="works_modal_close">キャンセル</p>
+                </div>
+                <div class="works_modal_inner">
+                    <p class="trade-asterisk">担当番号<br>(自社担当者)</p>
+                    <label class="works_modal_label">
+                        <select placeholder="分類選択">
+                            <option value="分類選択1">分類選択1</option>
+                            <option value="分類選択2">分類選択2</option>
+                            <option value="分類選択3">分類選択3</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="works_modal_inner">
+                    <p class="trade-asterisk">取引先</p>
+                    <input type="text" class="works_modal_num" placeholder="取引先名">
+                    <div class="toggle-button-cover trade-button">
+                        <div class="button-cover">
+                            <div class="button">
+                            <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                        <span>VAT請求</span>
+                    </div>
+                </div>
+                <div class="works_modal_inner">
+                    <p class="trade-asterisk">担当者<br>(取引先の担当者)</p>
+                    <input type="text" class="works_modal_num" placeholder="名">
+                </div>
+                <div class="works_modal_inner">
+                    <p class="trade-asterisk">連絡所</p>
+                    <input type="text" class="works_modal_num" placeholder="010-0000-0000">
+                </div>
+                <div class="works_modal_inner">
+                    <p class="trade-asterisk">区分</p>
+                    <label class="works_modal_label">
+                        <select placeholder="分類選択">
+                            <option value="分類選択1">分類選択1</option>
+                            <option value="分類選択2">分類選択2</option>
+                            <option value="分類選択3">分類選択3</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="works_modal_inner">
+                    <p>住所</p>
+                    <input type="text" class="works_modal_num w75p" placeholder="取引先 住所">
+                </div>
+                <div class="works_modal_inner">
+                    <p>最初の繰越日</p>
+                    <input type="text" class="works_modal_num" placeholder="2022.00.00(月)">
+                </div>
+                <div class="works_modal_inner">
+                    <p>初繰越金</p>
+                    <input type="text" class="works_modal_num" placeholder="99.999.99W">
+                </div>
+                <div class="works_modal_inner">
+                    <p>現米寿残高</p>
+                    <p>99.999.99W</p>
+                </div>
+                <div class="trade-btn">
+                    <button class="trade-btn__modification">修正</button>
+                    <button class="trade-btn__delete">削除</button>
+                </div>
+            </div>
+        </div>
+        <div class="works_modal_wrapper" data-modal="payment">
+            <div class="works_modal_mask"></div>
+            <div class="works_modal_window trade">
+                <div class="works_modal_content">
+                    <h3>入金</h3>
+                    <p class="works_modal_close">キャンセル</p>
+                </div>
+                <div class="works_modal_inner">
+                    <p>日数</p>
+                    <input type="text" class="works_modal_num" placeholder="2022.00.00（月）">
+                </div>
+                <div class="works_modal_inner">
+                    <p>取引先</p>
+                    <input type="text" class="works_modal_num" placeholder="取引先名">
+                </div>
+                <div class="works_modal_inner">
+                    <p>区分</p>
+                    <label class="works_modal_label">
+                        <select placeholder="分類選択">
+                            <option value="分類選択1">分類選択1</option>
+                            <option value="分類選択2">分類選択2</option>
+                            <option value="分類選択3">分類選択3</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="works_modal_inner">
+                    <p>金額</p>
+                    <input type="text" class="works_modal_num" placeholder="99.999.99w">
+                </div>
+                <div class="works_modal_inner">
+                    <p>秘庫</p>
+                    <input type="text" class="works_modal_num w75p" placeholder="TEXT TEXT TEXT TEXT TEXT">
+                </div>
+                <div class="works_modal_inner">
+                    <p>秘庫</p>
+                    <input type="radio" name="method" class="works_modal_trade" id="cash"><label class="works_modal_cash" for="cash">現金</label>
+                    <input type="radio" name="method" class="works_modal_trade" id="passbook"><label class="works_modal_cash" for="passbook">通帳入金</label>
+                </div>
+                <div class="trade-btn">
+                    <button class="trade-btn__register">修正</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/setting.js"></script>
 </body>
 </html>
