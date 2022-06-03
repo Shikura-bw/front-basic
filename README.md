@@ -1,7 +1,7 @@
 
 ## gulpデフォルトコマンド
-以下、gulpfileにて必要なnpmのコマンドライン
-$ npm i -D gulp gulp-sass gulp-notify gulp-postcss autoprefixer gulp-plumber
+以下、gulpfileにて必要なnpmのコマンドラインをインストール
+$ npm i
 
-以下で、sassが読み込まれ、cssが書き出される。
+以下で、ejs,scss,jsが読み込まれ、html,css,jsが書き出される。
 $ npm run watch

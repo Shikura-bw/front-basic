@@ -1,0 +1,43 @@
+.u-pc-block{
+    display: block;
+    @include sp{
+      display: none;
+    }
+  }
+  .u-tab-block{
+    display: none;
+    @include tab{
+      display: block;
+    }
+  }
+  .u-tab-sp-block{
+    display: none;
+    @include tab{
+      display: block;
+    }
+    @include sp{
+      display: none;
+    }
+  }
+  .u-sp-block{
+    display: none;
+    @include sp{
+      display: block;
+    }
+  }
+  .u-sp-i-block{
+    display: none;
+    @include sp{
+      display: inline-block;
+    }
+  }
+  .u-tab-none{
+    @include tab{
+      display: none;
+    }
+  }
+  .u-sp-none{
+    @include sp{
+      display: none;
+    }
+  }

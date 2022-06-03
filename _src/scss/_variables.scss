@@ -1,0 +1,29 @@
+// color
+$color--white: #ffffff;
+$imp-color--white: #ffffff!important;
+$color--crimson: #cf142b;
+$imp-color--crimson: #cf142b!important;
+$color--mystic: #dce0ea;
+$color--whisper: #f5f6fa;
+$color--black: #000000;
+$color--mine-shaft: #333333;
+$color--boston-blue: #3389bb;
+$color--sunglow: #ffd235;
+$color--valencia: #d73b4e;
+$color--dove-gray: #686868;
+$color--au-chico: #965d57;
+$colo--pearl-bush: #eadfdd;
+$color--vista-white: #fbf6f4;
+$color--eunry: #ca9d91;
+
+#Main main{
+  color: $color--mine-shaft;
+  font-size: 16px;
+  line-height: 32px;
+}
+.f-kalam{
+  font-family: 'Kalam', cursive;
+}
+
+$breakpoint: 620px;
+$breakpoint-tab: 900px;
