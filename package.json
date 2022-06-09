@@ -4,8 +4,8 @@
   "description": "以下、gulpfileにて必要なnpmのコマンドライン $ npm i -D gulp gulp-sass gulp-notify gulp-postcss autoprefixer gulp-plumber",
   "main": "gulpfile.js",
   "scripts": {
-    "watch": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docker: open": "cd wordpress-docker && docker-compose up -d && echo \"local server is built @ http://localhost:8300/\"",
+    "docker: close": "cd wordpress-docker && docker-compose down"
   },
   "repository": {
     "type": "git",
@@ -16,13 +16,5 @@
   "bugs": {
     "url": "https://github.com/Shikura-bw/front-basic/issues"
   },
-  "homepage": "https://github.com/Shikura-bw/front-basic#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "gulp": "^4.0.2",
-    "gulp-notify": "^4.0.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0"
-  }
+  "homepage": "https://github.com/Shikura-bw/front-basic#readme"
 }
