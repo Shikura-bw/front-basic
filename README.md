@@ -1,6 +1,3 @@
-## システム要件
-- node: v12.4.0
-
 ## 概要
 - テンプレートエンジン: EJS or Pug(Gulp)
 - スタイル: SCSS(Webpack)
