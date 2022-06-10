@@ -2,7 +2,7 @@
   "scripts": {
     "watch": "concurrently 'webpack-dev-server' 'gulp'",
     "imagemin": "node imagemin.js",
-    "build": "concurrently 'webpack --env.production' 'gulp build' 'node imagemin.js'"
+    "build": "rm -rf ./dist/* && concurrently 'webpack --env.production' 'gulp build' 'node imagemin.js'"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
