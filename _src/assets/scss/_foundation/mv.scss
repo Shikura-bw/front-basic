@@ -6,3 +6,14 @@
         text-align: center;
     }
 }
+
+.main-inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    &-text {
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
