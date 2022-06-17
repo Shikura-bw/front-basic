@@ -65,9 +65,12 @@ module.exports = env => {
     ],
     devtool: env && env.production ? '' : 'source-map',
     devServer: {
-      contentBase: config.path.dest,
-      open: true,
+      contentBase: path.join(__dirname, 'dist/'),
       port: 8200,
+      open: true,
+      hotOnly: true,
+      historyApiFallback: true,
+      publicPath: 'http://localhost:8200/',
     },
   }
 }

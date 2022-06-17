@@ -1,5 +1,5 @@
 ## 概要
-- テンプレートエンジン: EJS or Pug(Gulp)
+- テンプレートエンジン: EJS
 - スタイル: SCSS(Webpack)
 - JSコンパイル: Webpack
 - ローカルサーバ: webpack-dev-server(Buildしないとdestされません！)
