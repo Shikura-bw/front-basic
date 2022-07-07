@@ -38,5 +38,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-fix-style-only-entries": "^0.5.1"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
   }
 }

@@ -1,13 +1,11 @@
-import Menu from './components/menu.js';
-import Navcurrent from './components/nav_current.js';
-import ConversionSp from './components/conversion_sp.js';
+import Top from './components/top.js';
+import About from './components/about.js';
 
 const app = {
     // 初期化
     init() {
-        this.menu = new Menu();
-        this.nav_current = new Navcurrent();
-        this.conversion_sp = new ConversionSp();
+        this.Top = new Top();
+        this.About = new About();
     },
 };
 
