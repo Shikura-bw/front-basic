@@ -10,9 +10,7 @@ module.exports = env => {
     mode: env && env.production ? 'production' : 'development',
     entry: {
       'assets/js/app': path.resolve(__dirname, config.path.src + 'assets/js/index.js'),
-      'assets/js/main/script_app': path.resolve(__dirname, config.path.src + 'assets/js/main/index.js'),
       'assets/css/style.css': path.resolve(__dirname, config.path.src + 'assets/scss/style.scss'),
-      'assets/css/main/style_add.css': path.resolve(__dirname, config.path.src + 'assets/scss/main/style_add.scss')
     },
     output: {
       filename: '[name].js',
