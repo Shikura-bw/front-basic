@@ -1,6 +1,7 @@
 module.exports = {
   path: {
     src: './_src/',
-    dest: './dist/'
+    dest: './dist/',
+    img: './dist/assets/img/'
   }
 }

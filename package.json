@@ -1,8 +1,7 @@
 {
   "scripts": {
     "watch": "concurrently 'webpack-dev-server --mode development --hot --inline' 'NODE_ENV=development gulp'",
-    "imagemin": "node imagemin.js",
-    "build": "rm -rf ./dist/* && concurrently 'webpack --env.production' 'gulp build' 'node imagemin.js'"
+    "build": "concurrently 'node imagemin.js' 'webpack --env.production' 'gulp build'"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -38,5 +37,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-fix-style-only-entries": "^0.5.1"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0"
   }
 }
