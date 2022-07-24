@@ -1,0 +1,13 @@
+$break: 479px;
+
+@mixin media($media-width) {
+  @if $media-width == pc {
+    @media (min-width: $break + 1px) {
+      @content;
+    }
+  } @else if $media-width == sp {
+    @media (max-width: $break) {
+      @content;
+    }
+  }
+}
