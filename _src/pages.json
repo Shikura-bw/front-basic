@@ -1,0 +1,37 @@
+{
+"pages": [
+        {
+            "title": "TOP",
+            "description": "TOPディスクリプション！",
+            "dir": "/",
+            "name": "index",
+            "site": true,
+            "ogp_url": ""
+        },
+        {
+            "title": "概要",
+            "description": "概要ディスクリプション！",
+            "dir": "/about/",
+            "name": "index",
+            "site": true,
+            "ogp_url": "/about/"
+        },
+        {
+            "title": "コラムページ",
+            "description": "コラムページディスクリプション！",
+            "dir": "/about/clm/",
+            "name": "index",
+            "site": true,
+            "ogp_url": "/about/clm/"
+        },
+        {
+            "title": "特典ページ",
+            "description": "特典ページディスクリプション！",
+            "dir": "/special/",
+            "name": "index",
+            "tmpl": "special",
+            "special": true,
+            "ogp_url": "/special/"
+        }
+    ]
+}

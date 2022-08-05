@@ -1,0 +1,21 @@
+<%
+var data = jsonData;
+-%>
+
+<!-- head -->
+<% if (data.site) { -%>
+    <%- include('./_inc/_headCommon', {data: data}) %>
+<% } else if (data.special) { -%>
+    <%- include('./_inc/_head_special', {data: data}) %>
+<% } else { -%>
+    <%- include('./_inc/_head', {data: data}) %>
+<% } %>
+<!-- /head -->
+
+<!-- main -->
+<%- include('./_pages' + data.dir + data.name , {data: data}) %>
+<!-- /main -->
+
+<!-- footer -->
+<%- include('./_inc/_footer', {data: data}) %>
+<!-- /footer -->
