@@ -5,6 +5,12 @@
         font-size: 26px;
         text-align: center;
     }
+    @include media(pc) {
+        padding: 0 65px;
+    }
+    @include media(sp) {
+        padding: 0;
+    }
 }
 
 .main-inner {

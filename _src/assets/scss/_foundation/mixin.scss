@@ -1,13 +1,13 @@
-$break: 767;
+$break: 750px;
 
-@mixin pc {
-  @media (min-width: $break)  {
-    @content;
-  }
-}
-
-@mixin sp {
-  @media (max-width: $break + 1px) {
-    @content;
+@mixin media($media-width) {
+  @if $media-width == pc {
+    @media (min-width: $break + 1px) {
+      @content;
+    }
+  } @else if $media-width == sp {
+    @media (max-width: $break) {
+      @content;
+    }
   }
 }
