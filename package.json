@@ -3,6 +3,7 @@
     "watch": "concurrently 'webpack-dev-server --mode development --hot --inline' 'NODE_ENV=development gulp'",
     "build": "rm -rf ./dist/* && concurrently 'webpack --env.production' 'gulp build'"
   },
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
